@@ -1,3 +1,7 @@
+* {
+  padding: 0;
+  margin: 0;
+}
 .main-container {
   display: flex;
   flex-direction: column;
@@ -11,12 +15,19 @@ p {
 
 .header {
   background-color: #1f2037;
-  padding: 0 300px;
+  padding: 0 300px 100px 300px;
 }
 
 .header-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-bottom-left {
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -36,11 +47,8 @@ p {
 
 .header-bottom {
   display: flex;
-}
-
-.main-container > .header > div,
-.header-bottom > div {
-  border: 1px solid red;
+  padding-top: 100px;
+  gap: 20px;
 }
 
 .header-bottom > div {
@@ -48,14 +56,14 @@ p {
 }
 
 .header-bottom-left > h1 {
-  font-size: 48px;
+  font: 48px extra-bold;
   font-weight: 900;
   color: #f9faf8;
 }
 .header-bottom-left > p {
   font-size: 18px;
   color: #e5e7eb;
-  margin: 10px 0;
+  margin: 50px 0;
 }
 .header-bottom-left > button {
   background-color: #3882f6;
@@ -64,14 +72,64 @@ p {
   font-weight: bold;
   padding: 5px 30px;
   border-radius: 10px;
+  align-self: flex-start;
 }
 .header-bottom-right {
   background-color: #8f9091;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 300px;
 }
 .header-bottom-right > p {
   font-size: 18px;
   color: #f9faf8;
+}
+
+.random-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 36px extra-bold;
+  font-weight: 900;
+  color: #1f2937;
+  margin: 0;
+  padding: 50px 0 50px 0;
+}
+
+.illustraion-container {
+  display: flex;
+  gap: 30px;
+  padding: 0 400px 150px 400px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 250px;
+}
+
+.card-container > p {
+  text-align: center;
+  margin-top: 10px;
+}
+.card {
+  flex: 1;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+}
+
+.quote-container {
+  padding: 100px 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  font: 36px light italic;
+}
+
+.quote-author {
+  font-size: 24px;
+  font-weight: bold;
+  align-self: flex-end;
 }
